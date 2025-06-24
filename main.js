@@ -30,12 +30,10 @@ async function translate(text, from, to, options) {
         method: 'POST',
         url: requestPath,
         headers: headers,
-        body: JSON.stringify(
-            {
-                type: "Json",
-                payload: body
-            }
-        )
+        body: {
+            type: "Json",
+            payload: body
+        }
     });
 
     if (res.ok) {
