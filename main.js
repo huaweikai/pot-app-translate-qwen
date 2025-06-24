@@ -5,7 +5,7 @@ async function translate(text, from, to, options) {
     let { apiKey, model = "qwen-plus" } = config;
 
     // 设置默认请求路径
-    const requestPath = "https://dashscope.aliyuncs.com/compatible-mode/v1";
+    const requestPath = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions";
 
     const headers = {
         'Content-Type': 'application/json',
