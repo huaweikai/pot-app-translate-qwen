@@ -23,22 +23,14 @@ async function translate(text, from, to, options) {
                 "role": "user",
                 "content": `Translate into ${to}:\n${text}`
             }
-        ],
-        temperature: 0.1,
-        top_p: 0.99,
-        frequency_penalty: 0,
-        presence_penalty: 0,
-        max_tokens: 2000
+        ]
     }
 
     let res = await fetch(requestPath, {
         method: 'POST',
         url: requestPath,
         headers: headers,
-        body: {
-            type: "Json",
-            payload: body
-        }
+        body: JSON.stringify(body)
     });
 
     if (res.ok) {
