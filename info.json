@@ -10,8 +10,8 @@
       "display": "模型选择",
       "type": "select",
       "options": {
-        "QwenPlus": "qwen-plus",
-        "QwenTurbo": "qwen-turbo"
+        "qwen-plus": "QwenPlus",
+        "qwen-turbo": "QwenTurbo"
       },
       "default": "qwen-turbo"
     },
